@@ -31,7 +31,15 @@ export const repo = async (args: string[]): Promise<string> => {
 // About
 export const about = async (args: string[]): Promise<string> => {
   return `Hi, I am ${config.name}. 
+你好，我是${config.name}。
 Welcome to my website!
+欢迎来到我的网站！
+I am a software engineer with a passion for building Agentic AI for software engineers
+我是一名软件工程师，致力于为软件工程师构建Agentic AI。
+My mission is to empower every programmer with an invincible AI army, arming them to conquer the code surges.
+我的使命是赋予每位程序员一支无敌的AI军团，武装他们以驾驭日益增长的代码洪流。伴随着振奋人心的口号
+
+
 More about me:
 'sumfetch' - short summary.
 'resume' - my latest resume.
@@ -150,12 +158,12 @@ export const banner = (args?: string[]): string => {
    ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝     ╚══╝╚══╝  ╚═════╝ 
                                                                              
   
-Bug奔涌如洪流，
-Bugs surges like a torrent
-AI铸就无双利刃，
+代码奔涌如洪流
+Code surges like a torrent
+AI铸就无双利刃
 AI forges an unmatched blade
-程序员们，直面你们的天命，
-coders, face your destiny,
+程序员们，直面你们的天命
+coders, face your destiny!
 统御AI大军，征服混沌！
 command your AI army and conquer chaos!
 
