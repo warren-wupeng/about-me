@@ -1,20 +1,20 @@
 {
-  "readmeUrl": "https://raw.githubusercontent.com/cveinnt/cveinnt/master/README.md",
-  "title": "LiveTerm",
-  "name": "John Doe",
-  "ascii": "liveterm",
+  "readmeUrl": "https://raw.githubusercontent.com/warren-wupeng/warren-wupeng/main/README.md",
+  "title": "Warren Wupeng",
+  "name": "Warren Wupeng",
+  "ascii": "warren",
   "social": {
-    "github": "github",
-    "linkedin": "linkedin"
+    "github": "warren-wupeng",
+    "linkedin": "https://www.linkedin.com/in/peng-wu/"
   },
-  "email": "contact@email.com",
-  "ps1_hostname": "liveterm",
+  "email": "wupeng0059@gmail.com",
+  "ps1_hostname": "wupeng.tech",
   "ps1_username": "visitor",
-  "repo": "https://github.com/Cveinnt/LiveTerm",
-  "resume_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Resume.pdf",
+  "repo": "https://github.com/warren-wupeng/",
+  "resume_url": "",
   "donate_urls": {
-    "paypal": "https://paypal.me/cveinnt",
-    "patreon": "https://patreon.com/cveinnt"
+    "paypal": "",
+    "patreon": ""
   },
   "colors": {
     "light": {
