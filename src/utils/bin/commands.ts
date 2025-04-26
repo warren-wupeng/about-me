@@ -150,6 +150,15 @@ export const banner = (args?: string[]): string => {
    ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝     ╚══╝╚══╝  ╚═════╝ 
                                                                              
   
+Bug奔涌如洪流，
+Bugs surges like a torrent
+AI铸就无双利刃，
+AI forges an unmatched blade
+程序员们，直面你们的天命，
+coders, face your destiny,
+统御AI大军，征服混沌！
+command your AI army and conquer chaos!
+
 
 Type 'help' to see the list of available commands.
 Type 'sumfetch' to display summary.
