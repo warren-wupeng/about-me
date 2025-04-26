@@ -15,10 +15,10 @@ export const projects = async (args: string[]): Promise<string> => {
     .join('\n');
 };
 
-export const quote = async (args: string[]): Promise<string> => {
-  const data = await getQuote();
-  return data.quote;
-};
+// export const quote = async (args: string[]): Promise<string> => {
+//   const data = await getQuote();
+//   return data.quote;
+// };
 
 export const readme = async (args: string[]): Promise<string> => {
   const readme = await getReadme();
@@ -29,7 +29,7 @@ export const readme = async (args: string[]): Promise<string> => {
 export const weather = async (args: string[]): Promise<string> => {
   const city = args.join('+');
   if (!city) {
-    return 'Usage: weather [city]. Example: weather casablanca';
+    return 'Usage: weather [city]. Example: weather shenzhen';
   }
   const weather = await getWeather(city);
   return weather;
