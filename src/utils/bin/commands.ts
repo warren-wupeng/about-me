@@ -28,6 +28,37 @@ export const repo = async (args: string[]): Promise<string> => {
   return 'Opening Github repository...';
 };
 
+// Intro — interview self-introduction (maps to 4-point narrative)
+export const intro = async (args: string[]): Promise<string> => {
+  return `
+── Warren Wu · 吴鹏 ──────────────────────────────────────────────
+
+  我在每一波 AI 浪潮里都是第一批做产品的人。
+  I've been among the first to ship at every AI inflection point.
+
+  2023 ── ChatGPT wave
+           AI chatbot + RAG image-note app (OpenAI API)
+
+  2024 ── Coding wave  (Claude Sonnet 3.5)
+           Vibe Coding tool — websites for non-developers
+
+  2026 ── Agent wave   (OpenClaw → HappyCapy)
+           19 days · 10,000 sandboxes · 55 subscribers @ $2,000/yr
+           Product Hunt Feb 2026: #2 monthly · 201 votes · 4.75/5
+
+  Now ──── Data Analysis Agent                          [5 days · live]
+           Natural language → SQL · enterprise data platforms
+           Azure Databricks + Spark/Trino dual-env support
+
+──────────────────────────────────────────────────────────────────
+
+  联想要做数据分析 Agent，我已经用 5 天做出了 MVP。
+  这就是我来这里的原因。
+
+──────────────────────────────────────────────────────────────────
+  Type 'projects' to explore what I've built →`;
+};
+
 // About
 export const about = async (args: string[]): Promise<string> => {
   return `Hi, I am ${config.name}.
@@ -43,11 +74,11 @@ I build AI products at every wave — I've been among the first to ship at every
 Current focus: Data Analysis Agent — natural language to SQL for enterprise data platforms.
 现在：用 5 天工作之余构建出数据分析 Agent MVP，让业务用自然语言查询企业级数据平台。
 
+Type 'intro'    — interview-ready self introduction.
 Type 'sumfetch' — quick summary.
 Type 'projects' — things I've built.
 Type 'hire'     — open to work.
-Type 'resume'   — my latest resume.
-Type 'readme'   — my GitHub readme.`;
+Type 'resume'   — my latest resume.`;
 };
 
 // Mission
@@ -65,29 +96,30 @@ export const mission = async (args: string[]): Promise<string> => {
   └─────────────────────────────────────────────────────────────┘`;
 };
 
-// Projects — curated showcase
+// Projects — interview order: Data Agent first (most relevant), then proposal, HappyCapy, coding-agent
 export const projects = async (args: string[]): Promise<string> => {
   return `
-── Projects ──────────────────────────────────────────────────────
+── Projects ─────────────────────────── click any link to open →
 
-  HappyCapy                                           [2026 · Live]
+  data-analysis-agent                          [2026 · Live Demo]
+  Natural language → SQL · enterprise data platforms
+  Built in 5 days · Azure Databricks + Spark/Trino dual-env
+  <u><a class="text-light-blue dark:text-dark-blue underline" href="https://data-analysis-agent-warren.fly.dev" target="_blank">data-analysis-agent-warren.fly.dev ↗</a></u>
+
+  lenovo-data-agent-proposal                   [2026 · Proposal]
+  Full product proposal: 3-phase roadmap, dual-env architecture
+  Pass-through security · unified semantic layer
+  <u><a class="text-light-blue dark:text-dark-blue underline" href="https://warren-wupeng.github.io/lenovo-data-agent-proposal/" target="_blank">warren-wupeng.github.io/lenovo-data-agent-proposal ↗</a></u>
+
+  HappyCapy                                    [2026 · Live]
   AI-native sandbox platform
-  19 days to ship · 10,000 sandboxes · 55 subscribers @ $2K/yr
-  <u><a class="text-light-blue dark:text-dark-blue underline" href="https://happcapy.ai" target="_blank">happcapy.ai</a></u>
+  19 days · 10K sandboxes · 55 subscribers @ $2K/yr · PH Feb #2
+  <u><a class="text-light-blue dark:text-dark-blue underline" href="https://happcapy.ai" target="_blank">happcapy.ai ↗</a></u>
 
-  build-my-own-coding-agent                     [2025–2026 · Open Source]
-  5 versions · 33 → 9,266 lines · sub-agent delegation 60%→85%
-  Unified LLM abstraction: OpenAI / Anthropic / Gemini / DeepSeek / Mistral
-  <u><a class="text-light-blue dark:text-dark-blue underline" href="https://github.com/warren-wupeng/build-my-own-coding-agent" target="_blank">github.com/warren-wupeng/build-my-own-coding-agent</a></u>
-
-  data-analysis-agent                                 [2026 · Live Demo]
-  Natural language → SQL for enterprise data platforms
-  Built in 5 days · Azure Databricks + Spark/Trino dual-env support
-  <u><a class="text-light-blue dark:text-dark-blue underline" href="https://data-analysis-agent-warren.fly.dev" target="_blank">data-analysis-agent-warren.fly.dev</a></u>
-
-  lenovo-data-agent-proposal                         [2026 · Proposal]
-  Full product proposal: 3-phase roadmap, dual-env architecture, security design
-  <u><a class="text-light-blue dark:text-dark-blue underline" href="https://warren-wupeng.github.io/lenovo-data-agent-proposal/" target="_blank">warren-wupeng.github.io/lenovo-data-agent-proposal</a></u>
+  build-my-own-coding-agent                    [2025–2026 · Open Source]
+  5 versions · 33 → 9,266 lines · sub-agent 60%→85% success rate
+  Unified LLM: OpenAI / Anthropic / Gemini / DeepSeek / Mistral
+  <u><a class="text-light-blue dark:text-dark-blue underline" href="https://github.com/warren-wupeng/build-my-own-coding-agent" target="_blank">github.com/warren-wupeng/build-my-own-coding-agent ↗</a></u>
 
 ──────────────────────────────────────────────────────────────────
 Type 'hire' to see what I'm looking for next.`;
@@ -165,11 +197,9 @@ AI铸就无双利刃  ·  AI forges an unmatched blade
 统御AI大军，征服混沌  ·  Command your AI army and conquer chaos!
 
 
-Type 'help'     to see all commands.
-Type 'about'    to learn about me.
-Type 'projects' to see what I've built.
-Type 'hire'     if you're looking for someone like me.
-Type 'sumfetch' for a quick summary.
-Type 'repo' or click <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.repo}" target="_blank">here</a></u> to see my top project.
+Type 'intro'    — self introduction (start here).
+Type 'projects' — things I've built + live demos.
+Type 'hire'     — if you're looking for someone like me.
+Type 'sumfetch' — quick summary.
 `;
 };
