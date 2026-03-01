@@ -30,35 +30,28 @@ export const repo = async (args: string[]): Promise<string> => {
 
 // About
 export const about = async (args: string[]): Promise<string> => {
-  return `Hi, I am ${config.name}. 
-你好，我是${config.name}。
-Welcome to my website!
-欢迎来到我的网站！
-I am a software engineer with a passion for building Agentic AI for software engineers
-我是一名软件工程师，致力于为软件工程师构建Agentic AI。
-My mission is to empower every programmer with an invincible AI army, arming them to conquer the code surges.
-我的使命是赋予每位程序员一支无敌的AI军团，武装他们以驾驭日益增长的代码洪流。
+  return `Hi, I am ${config.name}.
+你好，我是 ${config.name}。
 
+I build AI products at every wave — I've been among the first to ship at every inflection point.
+我在每一波 AI 浪潮里都是第一批做产品的人。
 
-More about me:
-'sumfetch' - short summary.
-'resume' - my latest resume.
-'readme' - my github readme.`;
+  2023  ChatGPT →  AI chatbot + RAG image-note app
+  2024  Claude Sonnet 3.5  →  Vibe Coding tool (websites for non-coders)
+  2026  Agent era  →  HappyCapy — 19 days · 10K sandboxes · 55 annual subscribers @ $2K/yr
+
+Current focus: Data Analysis Agent — natural language to SQL for enterprise data platforms.
+现在：用 5 天工作之余构建出数据分析 Agent MVP，让业务用自然语言查询企业级数据平台。
+
+Type 'sumfetch' — quick summary.
+Type 'resume'   — my latest resume.
+Type 'readme'   — my GitHub readme.`;
 };
 
 export const resume = async (args: string[]): Promise<string> => {
   window.open(`${config.resume_url}`);
   return 'Opening resume...';
 };
-
-// Donate
-// export const donate = async (args: string[]): Promise<string> => {
-//   return `thank you for your interest. 
-// here are the ways you can support my work:
-// - <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.paypal}" target="_blank">paypal</a></u>
-// - <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.patreon}" target="_blank">patreon</a></u>
-// `;
-// };
 
 // Contact
 export const email = async (args: string[]): Promise<string> => {
@@ -78,27 +71,6 @@ export const linkedin = async (args: string[]): Promise<string> => {
   return 'Opening linkedin...';
 };
 
-// Search
-// export const google = async (args: string[]): Promise<string> => {
-//   window.open(`https://google.com/search?q=${args.join(' ')}`);
-//   return `Searching google for ${args.join(' ')}...`;
-// };
-
-// export const duckduckgo = async (args: string[]): Promise<string> => {
-//   window.open(`https://duckduckgo.com/?q=${args.join(' ')}`);
-//   return `Searching duckduckgo for ${args.join(' ')}...`;
-// };
-
-// export const bing = async (args: string[]): Promise<string> => {
-//   window.open(`https://bing.com/search?q=${args.join(' ')}`);
-//   return `Wow, really? You are using bing for ${args.join(' ')}?`;
-// };
-
-// export const reddit = async (args: string[]): Promise<string> => {
-//   window.open(`https://www.reddit.com/search/?q=${args.join(' ')}`);
-//   return `Searching reddit for ${args.join(' ')}...`;
-// };
-
 // Typical linux commands
 export const echo = async (args: string[]): Promise<string> => {
   return args.join(' ');
@@ -108,43 +80,9 @@ export const whoami = async (args: string[]): Promise<string> => {
   return `${config.ps1_username}`;
 };
 
-// export const ls = async (args: string[]): Promise<string> => {
-//   return `a
-// bunch
-// of
-// fake
-// directories`;
-// };
-
-// export const cd = async (args: string[]): Promise<string> => {
-//   return `unfortunately, i cannot afford more directories.
-// if you want to help, you can type 'donate'.`;
-// };
-
 export const date = async (args: string[]): Promise<string> => {
   return new Date().toString();
 };
-
-// export const vi = async (args: string[]): Promise<string> => {
-//   return `woah, you still use 'vi'? just try 'vim'.`;
-// };
-
-// export const vim = async (args: string[]): Promise<string> => {
-//   return `'vim' is so outdated. how about 'nvim'?`;
-// };
-
-// export const nvim = async (args: string[]): Promise<string> => {
-//   return `'nvim'? too fancy. why not 'emacs'?`;
-// };
-
-// export const emacs = async (args?: string[]): Promise<string> => {
-//   return `you know what? just use vscode.`;
-// };
-
-// export const sudo = async (args?: string[]): Promise<string> => {
-//   window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank'); // ...I'm sorry
-//   return `Permission denied: with little power comes... no responsibility? `;
-// };
 
 // Banner
 export const banner = (args?: string[]): string => {
@@ -156,20 +94,15 @@ export const banner = (args?: string[]): string => {
   ██║███╗██║██╔══██║██╔══██╗██╔══██╗██╔══╝  ██║╚██╗██║    ██║███╗██║██║   ██║
   ╚███╔███╔╝██║  ██║██║  ██║██║  ██║███████╗██║ ╚████║    ╚███╔███╔╝╚██████╔╝
    ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝     ╚══╝╚══╝  ╚═════╝ 
-                                                                             
-  
-代码奔涌如洪流
-Code surges like a torrent
-AI铸就无双利刃
-AI forges an unmatched blade
-程序员们，直面你们的天命
-coders, face your destiny!
-统御AI大军，征服混沌！
-command your AI army and conquer chaos!
+
+代码奔涌如洪流  ·  Code surges like a torrent
+AI铸就无双利刃  ·  AI forges an unmatched blade
+统御AI大军，征服混沌  ·  Command your AI army and conquer chaos!
 
 
 Type 'help' to see the list of available commands.
 Type 'sumfetch' to display summary.
+Type 'about' to learn more about me.
 Type 'repo' or click <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.repo}" target="_blank">here</a></u> for the Github repository.
 `;
 };
