@@ -47,6 +47,10 @@ export const intro = async (args: string[]): Promise<string> => {
            19d · 10K sandboxes · $2K/yr
            PH: 1,342 votes · 7 launches · 5K+ total
 
+  Open-source: build-my-own-coding-agent
+           6 versions · 33 → 16K lines · V6 Agent Team
+           PM + Engineer + Strategist — autonomous team
+
   Now ──── Data Analysis Agent
            NL → SQL · enterprise platforms
            Databricks + Spark/Trino · 5 days
@@ -122,8 +126,8 @@ export const projects = async (args: string[]): Promise<string> => {
   <u><a class="text-light-blue dark:text-dark-blue underline" href="https://www.producthunt.com/products/happycapy/launches" target="_blank">7 launches on Product Hunt (5K+ total votes) ↗</a></u>
 
   build-my-own-coding-agent  [2025-26 · OSS]
-  5 versions · 33 → 9,266 lines of code
-  OpenAI / Anthropic / Gemini / DeepSeek
+  6 versions · 33 → 16K lines · 67 tests
+  V6: Multi-Agent Team (PM/Engineer/Strategist)
   <u><a class="text-light-blue dark:text-dark-blue underline" href="https://github.com/warren-wupeng/build-my-own-coding-agent" target="_blank">github.com/warren-wupeng/coding-agent ↗</a></u>
 
 ─────────────────────────────────────────
@@ -141,7 +145,7 @@ export const hire = async (args: string[]): Promise<string> => {
 
   What I bring:
   · HappyCapy: 0 → 55 paying subs in 19 days
-  · Coding agent: 33 → 9,266 lines, V5
+  · Coding agent: 33 → 16K lines, V6
   · Can code AND define product strategy
 
   Reach me:
