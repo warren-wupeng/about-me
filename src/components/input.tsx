@@ -88,6 +88,7 @@ export const Input = ({
         ref={inputRef}
         id="prompt"
         type="text"
+        inputMode="text"
         className={`bg-light-background dark:bg-dark-background focus:outline-none flex-grow ${
           commandExists(command) || command === ''
             ? 'text-dark-green'
@@ -98,6 +99,8 @@ export const Input = ({
         autoFocus
         onKeyDown={onSubmit}
         autoComplete="off"
+        autoCapitalize="none"
+        autoCorrect="off"
         spellCheck="false"
       />
     </div>

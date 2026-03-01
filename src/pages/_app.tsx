@@ -6,7 +6,11 @@ const App = ({ Component, pageProps }) => {
   const inputRef = React.useRef<HTMLInputElement>(null);
 
   const onClickAnywhere = () => {
-    inputRef.current.focus();
+    // Only auto-focus on desktop (pointer: fine = mouse)
+    // On mobile this would pop the keyboard every time the user taps to scroll
+    if (typeof window !== 'undefined' && window.matchMedia('(pointer: fine)').matches) {
+      inputRef.current.focus();
+    }
   };
 
   return (
@@ -14,14 +18,13 @@ const App = ({ Component, pageProps }) => {
       <Head>
         <meta
           name="viewport"
-          content="initial-scale=1.0, width=device-width"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
           key="viewport"
-          maximum-scale="1"
         />
       </Head>
 
       <div
-        className="text-light-foreground dark:text-dark-foreground min-w-max text-xs md:min-w-full md:text-base"
+        className="text-light-foreground dark:text-dark-foreground w-full text-xs md:text-base overflow-x-hidden"
         onClick={onClickAnywhere}
       >
         <main className="bg-light-background dark:bg-dark-background w-full h-full p-2">

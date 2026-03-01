@@ -28,35 +28,37 @@ export const repo = async (args: string[]): Promise<string> => {
   return 'Opening Github repository...';
 };
 
-// Intro — interview self-introduction (maps to 4-point narrative)
+// Intro — interview self-introduction (4-point timeline narrative)
 export const intro = async (args: string[]): Promise<string> => {
   return `
-── Warren Wu · 吴鹏 ──────────────────────────────────────────────
+── Warren Wu · 吴鹏 ─────────────────────
 
   我在每一波 AI 浪潮里都是第一批做产品的人。
-  I've been among the first to ship at every AI inflection point.
+  First to ship at every AI inflection point.
 
   2023 ── ChatGPT wave
-           AI chatbot + RAG image-note app (OpenAI API)
+           RAG chatbot + image-note app
 
-  2024 ── Coding wave  (Claude Sonnet 3.5)
-           Vibe Coding tool — websites for non-developers
+  2024 ── Coding wave
+           Vibe Coding tool (Claude 3.5)
+           Websites for non-developers
 
-  2026 ── Agent wave   (OpenClaw → HappyCapy)
-           19 days · 10,000 sandboxes · 55 subscribers @ $2,000/yr
-           Product Hunt Feb 2026: #2 monthly · 201 votes · 4.75/5
+  2026 ── Agent wave  (HappyCapy)
+           19d · 10K sandboxes · $2K/yr
+           PH Feb 2026: #2 · 201 votes · 4.75
 
-  Now ──── Data Analysis Agent                          [5 days · live]
-           Natural language → SQL · enterprise data platforms
-           Azure Databricks + Spark/Trino dual-env support
+  Now ──── Data Analysis Agent
+           NL → SQL · enterprise platforms
+           Databricks + Spark/Trino · 5 days
 
-──────────────────────────────────────────────────────────────────
+─────────────────────────────────────────
 
-  联想要做数据分析 Agent，我已经用 5 天做出了 MVP。
+  联想要做数据分析 Agent，
+  我已经用 5 天做出了 MVP。
   这就是我来这里的原因。
 
-──────────────────────────────────────────────────────────────────
-  Type 'projects' to explore what I've built →`;
+─────────────────────────────────────────
+  Type 'projects' to see what I've built →`;
 };
 
 // About
@@ -64,17 +66,19 @@ export const about = async (args: string[]): Promise<string> => {
   return `Hi, I am ${config.name}.
 你好，我是 ${config.name}。
 
-I build AI products at every wave — I've been among the first to ship at every inflection point.
+I build AI products at every wave.
 我在每一波 AI 浪潮里都是第一批做产品的人。
 
-  2023  ChatGPT →  AI chatbot + RAG image-note app
-  2024  Claude Sonnet 3.5  →  Vibe Coding tool (websites for non-coders)
-  2026  Agent era  →  HappyCapy — 19 days · 10K sandboxes · 55 annual subscribers @ $2K/yr
+  2023  ChatGPT → RAG chatbot + image-note app
+  2024  Claude 3.5 → Vibe Coding tool
+  2026  Agent → HappyCapy
+        19d · 10K sandboxes · 55 subs @ $2K/yr
 
-Current focus: Data Analysis Agent — natural language to SQL for enterprise data platforms.
-现在：用 5 天工作之余构建出数据分析 Agent MVP，让业务用自然语言查询企业级数据平台。
+Current focus: Data Analysis Agent
+NL → SQL for enterprise data platforms.
+Built MVP in 5 days.
 
-Type 'intro'    — interview-ready self introduction.
+Type 'intro'    — interview self introduction.
 Type 'sumfetch' — quick summary.
 Type 'projects' — things I've built.
 Type 'hire'     — open to work.
@@ -84,67 +88,67 @@ Type 'resume'   — my latest resume.`;
 // Mission
 export const mission = async (args: string[]): Promise<string> => {
   return `
-  ┌─────────────────────────────────────────────────────────────┐
-  │                                                             │
-  │   "I build AI products at every wave."                     │
-  │   我在每一波 AI 浪潮里都是第一批做产品的人。                │
-  │                                                             │
-  │   2023  ChatGPT wave  →  shipped RAG apps                  │
-  │   2024  Coding wave   →  shipped Vibe Coding tool           │
-  │   2026  Agent wave    →  shipped HappyCapy + Data Agent     │
-  │                                                             │
-  └─────────────────────────────────────────────────────────────┘`;
+  ┌──────────────────────────────────────┐
+  │                                      │
+  │  "I build AI at every wave."         │
+  │  每波 AI 浪潮里第一批做产品的人。    │
+  │                                      │
+  │  2023  ChatGPT  →  RAG apps          │
+  │  2024  Coding   →  Vibe Coding tool  │
+  │  2026  Agent    →  HappyCapy         │
+  │                                      │
+  └──────────────────────────────────────┘`;
 };
 
-// Projects — interview order: Data Agent first (most relevant), then proposal, HappyCapy, coding-agent
+// Projects — interview order: Data Agent first, then proposal, HappyCapy, coding-agent
 export const projects = async (args: string[]): Promise<string> => {
   return `
-── Projects ─────────────────────────── click any link to open →
+── Projects ────────── click link to open →
 
-  data-analysis-agent                          [2026 · Live Demo]
-  Natural language → SQL · enterprise data platforms
-  Built in 5 days · Azure Databricks + Spark/Trino dual-env
+  data-analysis-agent          [2026 · Demo]
+  NL → SQL · enterprise platforms
+  Databricks + Spark/Trino · built in 5 days
   <u><a class="text-light-blue dark:text-dark-blue underline" href="https://data-analysis-agent-warren.fly.dev" target="_blank">data-analysis-agent-warren.fly.dev ↗</a></u>
 
-  lenovo-data-agent-proposal                   [2026 · Proposal]
-  Full product proposal: 3-phase roadmap, dual-env architecture
-  Pass-through security · unified semantic layer
-  <u><a class="text-light-blue dark:text-dark-blue underline" href="https://warren-wupeng.github.io/lenovo-data-agent-proposal/" target="_blank">warren-wupeng.github.io/lenovo-data-agent-proposal ↗</a></u>
+  lenovo-data-agent-proposal      [2026]
+  3-phase roadmap · dual-env architecture
+  Pass-through security · semantic layer
+  <u><a class="text-light-blue dark:text-dark-blue underline" href="https://warren-wupeng.github.io/lenovo-data-agent-proposal/" target="_blank">warren-wupeng.github.io/.../proposal ↗</a></u>
 
-  HappyCapy                                    [2026 · Live]
+  HappyCapy                    [2026 · Live]
   AI-native sandbox platform
-  19 days · 10K sandboxes · 55 subscribers @ $2K/yr · PH Feb #2
+  19d · 10K sandboxes · 55 subs · PH Feb #2
   <u><a class="text-light-blue dark:text-dark-blue underline" href="https://happcapy.ai" target="_blank">happcapy.ai ↗</a></u>
 
-  build-my-own-coding-agent                    [2025–2026 · Open Source]
-  5 versions · 33 → 9,266 lines · sub-agent 60%→85% success rate
-  Unified LLM: OpenAI / Anthropic / Gemini / DeepSeek / Mistral
-  <u><a class="text-light-blue dark:text-dark-blue underline" href="https://github.com/warren-wupeng/build-my-own-coding-agent" target="_blank">github.com/warren-wupeng/build-my-own-coding-agent ↗</a></u>
+  build-my-own-coding-agent  [2025-26 · OSS]
+  5 versions · 33 → 9,266 lines of code
+  OpenAI / Anthropic / Gemini / DeepSeek
+  <u><a class="text-light-blue dark:text-dark-blue underline" href="https://github.com/warren-wupeng/build-my-own-coding-agent" target="_blank">github.com/warren-wupeng/coding-agent ↗</a></u>
 
-──────────────────────────────────────────────────────────────────
-Type 'hire' to see what I'm looking for next.`;
+─────────────────────────────────────────
+Type 'hire' to see what I'm looking for.`;
 };
 
 // Hire
 export const hire = async (args: string[]): Promise<string> => {
   return `
-── Open to Work ──────────────────────────────────────────────────
+── Open to Work ──────────────────────────
 
-  Role        Product Manager / AI Product
-  Focus       Agent systems, enterprise data, developer tools
-  Stack       Python · TypeScript · LLM orchestration · FastAPI
+  Role    Product Manager / AI Product
+  Focus   Agent systems · enterprise data
+  Stack   Python · TypeScript · LLM · FastAPI
 
   What I bring:
-  · Shipped HappyCapy from zero to 55 paying subscribers in 19 days
-  · Built a coding agent from 33 → 9,266 lines across 5 versions
-  · Can write production code AND define the product strategy
+  · HappyCapy: 0 → 55 paying subs in 19 days
+  · Coding agent: 33 → 9,266 lines, V5
+  · Can code AND define product strategy
 
-  Best way to reach me:
+  Reach me:
   · Email   <u><a class="text-light-blue dark:text-dark-blue underline" href="mailto:${config.email}" target="_blank">${config.email}</a></u>
   · LinkedIn <u><a class="text-light-blue dark:text-dark-blue underline" href="https://linkedin.com/in/${config.social.linkedin}" target="_blank">linkedin.com/in/${config.social.linkedin}</a></u>
   · GitHub  <u><a class="text-light-blue dark:text-dark-blue underline" href="https://github.com/${config.social.github}" target="_blank">github.com/${config.social.github}</a></u>
 
-──────────────────────────────────────────────────────────────────`;
+─────────────────────────────────────────`;
 };
 
 export const resume = async (args: string[]): Promise<string> => {
@@ -181,20 +185,28 @@ export const date = async (args: string[]): Promise<string> => {
   return new Date().toString();
 };
 
-// Banner
+// Banner — mobile-responsive: ASCII art on desktop, text logo on mobile
 export const banner = (args?: string[]): string => {
-  return `
+  const narrow =
+    typeof window !== 'undefined' && window.innerWidth < 640;
 
+  const art = narrow
+    ? `
+  Warren Wu · 吴鹏
+  ─────────────────────────────────────────`
+    : `
   ██╗    ██╗ █████╗ ██████╗ ██████╗ ███████╗███╗   ██╗    ██╗    ██╗██╗   ██╗
   ██║    ██║██╔══██╗██╔══██╗██╔══██╗██╔════╝████╗  ██║    ██║    ██║██║   ██║
   ██║ █╗ ██║███████║██████╔╝██████╔╝█████╗  ██╔██╗ ██║    ██║ █╗ ██║██║   ██║
   ██║███╗██║██╔══██║██╔══██╗██╔══██╗██╔══╝  ██║╚██╗██║    ██║███╗██║██║   ██║
   ╚███╔███╔╝██║  ██║██║  ██║██║  ██║███████╗██║ ╚████║    ╚███╔███╔╝╚██████╔╝
-   ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝     ╚══╝╚══╝  ╚═════╝ 
+   ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝     ╚══╝╚══╝  ╚═════╝ `;
+
+  return `${art}
 
 代码奔涌如洪流  ·  Code surges like a torrent
 AI铸就无双利刃  ·  AI forges an unmatched blade
-统御AI大军，征服混沌  ·  Command your AI army and conquer chaos!
+统御AI大军，征服混沌
 
 
 Type 'intro'    — self introduction (start here).

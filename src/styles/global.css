@@ -21,21 +21,52 @@ div#__next > div {
   overflow: auto;
 }
 
-::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+/* Prevent horizontal overflow on mobile */
+body {
+  overflow-x: hidden;
 }
 
-::-webkit-scrollbar-track {
-  background: #1e252e;
-  border-radius: 5px;
+/* Ensure pre-wrapped text breaks correctly on narrow screens */
+.whitespace-pre-wrap {
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
-::-webkit-scrollbar-thumb {
-  background: #ebdbb2;
-  border-radius: 5px;
+/* Desktop scrollbar */
+@media (min-width: 640px) {
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #1e252e;
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #ebdbb2;
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ff8037;
+  }
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: #ff8037;
+/* Mobile: thin scrollbar */
+@media (max-width: 639px) {
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #1e252e;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #665c54;
+    border-radius: 2px;
+  }
 }
