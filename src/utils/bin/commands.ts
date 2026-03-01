@@ -204,9 +204,11 @@ export const banner = (args?: string[]): string => {
 
   return `${art}
 
-代码奔涌如洪流  ·  Code surges like a torrent
-AI铸就无双利刃  ·  AI forges an unmatched blade
-统御AI大军，征服混沌
+每一波浪潮，我都是第一个出手的人
+Every wave, I'm the first to ship
+
+代码为骨，Agent 为翼，数据为疆
+Code as backbone, agents as wings, data as domain
 
 
 Type 'intro'    — self introduction (start here).
