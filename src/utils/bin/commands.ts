@@ -73,7 +73,7 @@ export const projects = async (args: string[]): Promise<string> => {
   HappyCapy                                           [2026 · Live]
   AI-native sandbox platform
   19 days to ship · 10,000 sandboxes · 55 subscribers @ $2K/yr
-  <u><a class="text-light-blue dark:text-dark-blue underline" href="https://github.com/warren-wupeng/warren-startup" target="_blank">github.com/warren-wupeng/warren-startup</a></u>
+  <u><a class="text-light-blue dark:text-dark-blue underline" href="https://happcapy.ai" target="_blank">happcapy.ai</a></u>
 
   build-my-own-coding-agent                     [2025–2026 · Open Source]
   5 versions · 33 → 9,266 lines · sub-agent delegation 60%→85%
