@@ -24,7 +24,7 @@ Type 'sumfetch' to display summary.
 
 // Redirection
 export const repo = async (args: string[]): Promise<string> => {
-  window.open(`${config.social.github}`);
+  window.open(`${config.repo}`);
   return 'Opening Github repository...';
 };
 
@@ -44,8 +44,75 @@ Current focus: Data Analysis Agent — natural language to SQL for enterprise da
 现在：用 5 天工作之余构建出数据分析 Agent MVP，让业务用自然语言查询企业级数据平台。
 
 Type 'sumfetch' — quick summary.
+Type 'projects' — things I've built.
+Type 'hire'     — open to work.
 Type 'resume'   — my latest resume.
 Type 'readme'   — my GitHub readme.`;
+};
+
+// Mission
+export const mission = async (args: string[]): Promise<string> => {
+  return `
+  ┌─────────────────────────────────────────────────────────────┐
+  │                                                             │
+  │   "I build AI products at every wave."                     │
+  │   我在每一波 AI 浪潮里都是第一批做产品的人。                │
+  │                                                             │
+  │   2023  ChatGPT wave  →  shipped RAG apps                  │
+  │   2024  Coding wave   →  shipped Vibe Coding tool           │
+  │   2026  Agent wave    →  shipped HappyCapy + Data Agent     │
+  │                                                             │
+  └─────────────────────────────────────────────────────────────┘`;
+};
+
+// Projects — curated showcase
+export const projects = async (args: string[]): Promise<string> => {
+  return `
+── Projects ──────────────────────────────────────────────────────
+
+  HappyCapy                                           [2026 · Live]
+  AI-native sandbox platform
+  19 days to ship · 10,000 sandboxes · 55 subscribers @ $2K/yr
+  <u><a class="text-light-blue dark:text-dark-blue underline" href="https://github.com/warren-wupeng/warren-startup" target="_blank">github.com/warren-wupeng/warren-startup</a></u>
+
+  build-my-own-coding-agent                     [2025–2026 · Open Source]
+  5 versions · 33 → 9,266 lines · sub-agent delegation 60%→85%
+  Unified LLM abstraction: OpenAI / Anthropic / Gemini / DeepSeek / Mistral
+  <u><a class="text-light-blue dark:text-dark-blue underline" href="https://github.com/warren-wupeng/build-my-own-coding-agent" target="_blank">github.com/warren-wupeng/build-my-own-coding-agent</a></u>
+
+  data-analysis-agent                                 [2026 · Live Demo]
+  Natural language → SQL for enterprise data platforms
+  Built in 5 days · Azure Databricks + Spark/Trino dual-env support
+  <u><a class="text-light-blue dark:text-dark-blue underline" href="https://data-analysis-agent-warren.fly.dev" target="_blank">data-analysis-agent-warren.fly.dev</a></u>
+
+  lenovo-data-agent-proposal                         [2026 · Proposal]
+  Full product proposal: 3-phase roadmap, dual-env architecture, security design
+  <u><a class="text-light-blue dark:text-dark-blue underline" href="https://warren-wupeng.github.io/lenovo-data-agent-proposal/" target="_blank">warren-wupeng.github.io/lenovo-data-agent-proposal</a></u>
+
+──────────────────────────────────────────────────────────────────
+Type 'hire' to see what I'm looking for next.`;
+};
+
+// Hire
+export const hire = async (args: string[]): Promise<string> => {
+  return `
+── Open to Work ──────────────────────────────────────────────────
+
+  Role        Product Manager / AI Product
+  Focus       Agent systems, enterprise data, developer tools
+  Stack       Python · TypeScript · LLM orchestration · FastAPI
+
+  What I bring:
+  · Shipped HappyCapy from zero to 55 paying subscribers in 19 days
+  · Built a coding agent from 33 → 9,266 lines across 5 versions
+  · Can write production code AND define the product strategy
+
+  Best way to reach me:
+  · Email   <u><a class="text-light-blue dark:text-dark-blue underline" href="mailto:${config.email}" target="_blank">${config.email}</a></u>
+  · LinkedIn <u><a class="text-light-blue dark:text-dark-blue underline" href="https://linkedin.com/in/${config.social.linkedin}" target="_blank">linkedin.com/in/${config.social.linkedin}</a></u>
+  · GitHub  <u><a class="text-light-blue dark:text-dark-blue underline" href="https://github.com/${config.social.github}" target="_blank">github.com/${config.social.github}</a></u>
+
+──────────────────────────────────────────────────────────────────`;
 };
 
 export const resume = async (args: string[]): Promise<string> => {
@@ -61,13 +128,11 @@ export const email = async (args: string[]): Promise<string> => {
 
 export const github = async (args: string[]): Promise<string> => {
   window.open(`https://github.com/${config.social.github}/`);
-
   return 'Opening github...';
 };
 
 export const linkedin = async (args: string[]): Promise<string> => {
   window.open(`https://www.linkedin.com/in/${config.social.linkedin}/`);
-
   return 'Opening linkedin...';
 };
 
@@ -100,9 +165,11 @@ AI铸就无双利刃  ·  AI forges an unmatched blade
 统御AI大军，征服混沌  ·  Command your AI army and conquer chaos!
 
 
-Type 'help' to see the list of available commands.
-Type 'sumfetch' to display summary.
-Type 'about' to learn more about me.
-Type 'repo' or click <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.repo}" target="_blank">here</a></u> for the Github repository.
+Type 'help'     to see all commands.
+Type 'about'    to learn about me.
+Type 'projects' to see what I've built.
+Type 'hire'     if you're looking for someone like me.
+Type 'sumfetch' for a quick summary.
+Type 'repo' or click <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.repo}" target="_blank">here</a></u> to see my top project.
 `;
 };
