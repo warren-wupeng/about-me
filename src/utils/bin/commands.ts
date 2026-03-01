@@ -45,7 +45,7 @@ export const intro = async (args: string[]): Promise<string> => {
 
   2026 ── Agent wave  (HappyCapy)
            19d · 10K sandboxes · $2K/yr
-           PH Feb 2026: #2 · 201 votes · 4.75
+           PH: 1,342 votes · 7 launches · 5K+ total
 
   Now ──── Data Analysis Agent
            NL → SQL · enterprise platforms
@@ -117,8 +117,9 @@ export const projects = async (args: string[]): Promise<string> => {
 
   HappyCapy                    [2026 · Live]
   AI-native sandbox platform
-  19d · 10K sandboxes · 55 subs · PH Feb #2
+  19d · 10K sandboxes · 55 subs · PH 1,342 votes
   <u><a class="text-light-blue dark:text-dark-blue underline" href="https://happcapy.ai" target="_blank">happcapy.ai ↗</a></u>
+  <u><a class="text-light-blue dark:text-dark-blue underline" href="https://www.producthunt.com/products/happycapy/launches" target="_blank">7 launches on Product Hunt (5K+ total votes) ↗</a></u>
 
   build-my-own-coding-agent  [2025-26 · OSS]
   5 versions · 33 → 9,266 lines of code
