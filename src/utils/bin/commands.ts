@@ -44,7 +44,7 @@ export const intro = async (args: string[]): Promise<string> => {
            Websites for non-developers
 
   2026 ── Agent wave  (HappyCapy)
-           19d · 10K sandboxes · $2K/yr
+           19d · 12K users · 476 paid · 4% CVR
            PH: 1,342 votes · 7 launches · 5K+ total
 
   Open-source: build-my-own-coding-agent
@@ -76,7 +76,7 @@ I build AI products at every wave.
   2023  ChatGPT → RAG chatbot + image-note app
   2024  Claude 3.5 → Vibe Coding tool
   2026  Agent → HappyCapy
-        19d · 10K sandboxes · 55 subs @ $2K/yr
+        19d · 12K users · 476 paid · 4% CVR
 
 Current focus: Data Analysis Agent
 NL → SQL for enterprise data platforms.
@@ -121,7 +121,7 @@ export const projects = async (args: string[]): Promise<string> => {
 
   HappyCapy                    [2026 · Live]
   AI-native sandbox platform
-  19d · 10K sandboxes · 55 subs · PH 1,342 votes
+  19d · 12K users · 476 paid · 4% CVR · PH 1,342 votes
   <u><a class="text-light-blue dark:text-dark-blue underline" href="https://happcapy.ai" target="_blank">happcapy.ai ↗</a></u>
   <u><a class="text-light-blue dark:text-dark-blue underline" href="https://www.producthunt.com/products/happycapy/launches" target="_blank">7 launches on Product Hunt (5K+ total votes) ↗</a></u>
 
@@ -152,6 +152,7 @@ export const hire = async (args: string[]): Promise<string> => {
   · Email   <u><a class="text-light-blue dark:text-dark-blue underline" href="mailto:${config.email}" target="_blank">${config.email}</a></u>
   · LinkedIn <u><a class="text-light-blue dark:text-dark-blue underline" href="https://linkedin.com/in/${config.social.linkedin}" target="_blank">linkedin.com/in/${config.social.linkedin}</a></u>
   · GitHub  <u><a class="text-light-blue dark:text-dark-blue underline" href="https://github.com/${config.social.github}" target="_blank">github.com/${config.social.github}</a></u>
+  · 小红书   <u><a class="text-light-blue dark:text-dark-blue underline" href="https://www.xiaohongshu.com/user/profile/597f56f282ec393545fd6896" target="_blank">鹏哥聊编程 (637 赞与收藏) ↗</a></u>
 
 ─────────────────────────────────────────`;
 };
