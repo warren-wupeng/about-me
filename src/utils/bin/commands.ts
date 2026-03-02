@@ -144,7 +144,7 @@ export const hire = async (args: string[]): Promise<string> => {
   Stack   Python · TypeScript · LLM · FastAPI
 
   What I bring:
-  · HappyCapy: 0 → 55 paying subs in 19 days
+  · HappyCapy: 12K users · 476 paid · 4% conversion
   · Coding agent: 33 → 16K lines, V6
   · Can code AND define product strategy
 

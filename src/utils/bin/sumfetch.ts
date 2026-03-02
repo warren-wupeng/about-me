@@ -16,8 +16,8 @@ const sumfetch = async (args: string[]): Promise<string> => {
     ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓           <u><a href="https://linkedin.com/in/${config.social.linkedin}" target="_blank">linkedin.com/in/${config.social.linkedin}</a></u>
       ▓▓▓   ▐▓▓   ▓▓   ▓▓▓   ▓▓▀            -----------
         ▀▓▓▄▄ ▀▓▓▄▓▓▄▓▓▓▄▄▓▓▀                HIGHLIGHTS
-            ▀▓▓▓▓▓▓▓▓▓▓▓▀▀                    HappyCapy 19d · 10K sandboxes · 55 subs
-                                              coding-agent 33→9,266 lines · V0-V5
+            ▀▓▓▓▓▓▓▓▓▓▓▓▀▀                    HappyCapy 12K users · 476 paid · 4% CVR
+                                              coding-agent 33→16K lines · V0-V6
                                               Data Agent MVP in 5 days
 
 `;
