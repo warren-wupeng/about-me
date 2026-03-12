@@ -18,6 +18,7 @@ const sumfetch = async (args: string[]): Promise<string> => {
         ▀▓▓▄▄ ▀▓▓▄▓▓▄▓▓▓▄▄▓▓▀                HIGHLIGHTS
             ▀▓▓▓▓▓▓▓▓▓▓▓▀▀                    DDD/CQRS · 7 services · QPS ~167
                                               AI Gateway + MCP + multi-sandbox
+                                              atos: Agent Team OS · npm + MCP
                                               HappyCapy 12K users · PH triple #1
 
 `;

@@ -54,6 +54,10 @@ export const intro = async (args: string[]): Promise<string> => {
   Open-source: build-my-own-coding-agent
            6 versions · 33 → 16K lines · V6 Agent Team
 
+  Open-source: atos — Agent Team OS
+           npm: @warren-wu/atos-cli · MCP Server (19 tools)
+           CLI-first multi-agent coordination · any runtime
+
 ─────────────────────────────────────────
 
   架构能力 × AI 落地经验
@@ -123,10 +127,12 @@ export const projects = async (args: string[]): Promise<string> => {
   Databricks + Spark/Trino · built in 5 days
   <u><a class="text-light-blue dark:text-dark-blue underline" href="https://data-analysis-agent-warren.fly.dev" target="_blank">data-analysis-agent-warren.fly.dev ↗</a></u>
 
-  5-Agent Team OS            [2026 · OSS]
-  Hub-and-Spoke multi-agent coordination
-  Async communication · Persona · SOP framework
+  atos — Agent Team OS      [2026 · OSS · npm]
+  CLI + MCP Server (19 tools) · SQLite
+  Multi-agent coordination for any runtime
+  npx @warren-wu/atos-cli · SOP · FTS5 search
   <u><a class="text-light-blue dark:text-dark-blue underline" href="https://github.com/warren-wupeng/agent-team-os" target="_blank">github.com/warren-wupeng/agent-team-os ↗</a></u>
+  <u><a class="text-light-blue dark:text-dark-blue underline" href="https://www.npmjs.com/package/@warren-wu/atos-cli" target="_blank">npm: @warren-wu/atos-cli ↗</a></u>
 
 ─────────────────────────────────────────
 Type 'hire' to see what I'm looking for.`;
@@ -145,6 +151,7 @@ export const hire = async (args: string[]): Promise<string> => {
   · 14 yrs backend · DDD/CQRS microservices
   · AI platform from 0→1: 12K users · 4% CVR
   · AI Gateway + MCP + multi-sandbox engine
+  · atos: Agent Team OS (npm + MCP Server)
   · Claude Code daily driver · OSS coding agent
   · Overseas product: Stripe · i18n · AWS/Fly.io
 
